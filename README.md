@@ -76,6 +76,6 @@ mkdir haplos
 module load enthought_python/7.3.2
 python rename_sexual_reads.py >new.sexual.names.txt 
 cat new.sexual.names.txt | grep -v error | grep -v "||" | sed '/^$/d' >newnew.sexual.names.txt
-
+qsub processs_sexual.sh
 
 ```
