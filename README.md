@@ -51,13 +51,22 @@ source /data/apps/progressiveCactus/environment
 runProgressiveCactus.sh --maxThreads 64 yeast.txt PCwork PCwork/yeast.hal
 hal2assemblyHub.py PCwork/yeast.hal AssHub --maxThreads 64 --lod
 #####
+
+# on wfitch
+mkdir YEASThub2
+# on cluster
+cd AssHub
+scp -r * tdlong@wfitch.bio.uci.edu:/home/tdlong/public_html/SantaCruzTracks/YEASThub2/.
 ```
+- edit trackDb file in SacCer3 subdirectory to control order of SNAKE tracks
+- edit genomes.txt (so browser uses SCGB version of SacCer3 (and annotations) not local ones
+- open track hub in browser, get order of tracks and flavor of tracks how you want them and create session file
+- copy session file as "April22.txt" to YEASThub2
 
+This is the link to the genome
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=sacCer3&hubClear=http://wfitch.bio.uci.edu/~tdlong/SantaCruzTracks/YEASThub2/hub.txt&hgS_loadUrlName=http://wfitch.bio.uci.edu/~tdlong/SantaCruzTracks/YEASThub2/April22.txt&hgS_doLoadUrl=submit
 
-
-
-
-
+I also usually maker a short link in BITLY, GOOGL (RIP), etc.
 
 # sexual reads
 
