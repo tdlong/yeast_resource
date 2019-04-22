@@ -16,3 +16,16 @@ runProgressiveCactus.sh --maxThreads 64 yeast.txt PCwork PCwork/yeast.hal
 hal2assemblyHub.py PCwork/yeast.hal AssHub --maxThreads 64 --lod
 ```
 
+
+
+
+
+## process reads
+I have to process all the sexual reads.
+The first job is to take the raw reads and add sample names to the file names in preparation for processing
+This required a barcode mapping file "barcodes.txt" located in Illdata/sexual/
+
+```bash
+module load 
+python ???
+```
