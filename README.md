@@ -78,7 +78,7 @@ mkdir Jan10
 cd Jan10
 mkdir bam
 mkdir mut
-mkdir gvcf
+mkdir SNPs
 mkdir haplos
 ..
 
