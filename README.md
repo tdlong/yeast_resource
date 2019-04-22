@@ -1,5 +1,4 @@
-# yeast_resource
-yeast 18-way resource paper
+## yeast 18-way resource paper
 
 The first job is to take the PACBIO assemblies and make a SCGB hub
 
