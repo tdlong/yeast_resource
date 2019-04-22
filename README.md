@@ -1,6 +1,6 @@
-# yeast 18-way resource paper
+## yeast 18-way resource paper
 
-First do align Mahul's PB assemblies
+# First do align Mahul's PB assemblies
 
 ```bash
 mkdir Mahul_April_2019
