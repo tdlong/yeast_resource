@@ -26,5 +26,5 @@ This required a barcode mapping file "barcode.mappings.txt" located in Illdata/s
 
 ```bash
 module load enthought_python/7.3.2
-python rename_sexual_reads.py 
+python rename_sexual_reads.py >new.sexual.names.txt
 ```
