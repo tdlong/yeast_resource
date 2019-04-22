@@ -39,7 +39,3 @@ for line in FH:
 		print id + "\t" + id + '_' + basenameR1 + "\t" + id + '_' + basenameR1
 
 FH.close()
-<<<<<<< HEAD
-=======
-
->>>>>>> First commit
