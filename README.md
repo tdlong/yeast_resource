@@ -26,6 +26,6 @@ The first job is to take the raw reads and add sample names to the file names in
 This required a barcode mapping file "barcodes.txt" located in Illdata/sexual/
 
 ```bash
-module load 
-python ???
+module load enthought_python/7.3.2
+python rename_sexual_reads.py 
 ```
