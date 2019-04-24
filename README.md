@@ -152,26 +152,9 @@ tail -n +2 temp.vcf | sort -k1,1 -k2,2n -k3,3 >> MUT.sexual.April23.vcf
 Now on to haplotypes
 
 it is useful to have a file of chromosome names longest to shortest (as it makes the array job faster)
+filename = "chromes.longfirst.txt"
 
-file = "chromes.longfirst.txt"
-chrIV
-chrXV
-chrVII
-chrXII
-chrXVI
-chrXIII
-chrII
-chrXIV
-chrX
-chrXI
-chrV
-chrVIII
-chrIX
-chrIII
-chrVI
-chrI
-chrM
-
+plus the name of each sample (along with some controls/references)
 ```bash
 # copy files.April23.txt to the project root and edit and skip first 18 samples.
 sed -i 's/.newmut.vcf//' files.April23.txt
