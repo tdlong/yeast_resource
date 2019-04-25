@@ -1,6 +1,6 @@
 #!/bin/bash
 #$ -N lhap
-#$ -q abio128
+#$ -q bio
 #$ -tc 400
 #$ -ckpt restart
 #$ -pe openmp 2
@@ -14,5 +14,8 @@ pool=`head -n $SGE_TASK_ID $file | tail -n 1 | cut -f2`
 # haplotyper.4.code.R is current the 50:50 caller with sigma
 # chosen so 50 sites closest to position
 # account for 50% of weight
+outputfilename="Jan10/haplos/T1/${pool}_${chr}_hap_freq.txt"
+if ! [ -f "$outputfilename" ]; then
 Rscript haplotyper.limSolve.R "Jan10/SNPs/SNPtable.April23.sort.txt" $chr $pool "founder.file.sexual.txt" "Jan10/haplos/T1"
+fi
 
