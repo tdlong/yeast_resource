@@ -181,16 +181,18 @@ wc -l chr_pool_April23.txt
 # 7854
 # edit haplotype.limSolve.sh for correct number of samples/lines
 qsub haplotype.limSolve.sh
-# wait until done
-sh haplotyper.April23.merge.sh
 ```
 
 On our cluster, sometimes jobs fail, so I have to identify failed jobs and re-run them
-You sort of have to run the two commands below until all samples are processed
 
 ```bash
 sh haplotype.identify.fails.sh > new.extra
 qsub haplotype.limSolve.cleanup.sh 
+```
+You sort of have to run the two commands above until all samples are processed, then merge
+
+```bash
+sh haplotyper.April23.merge.sh
 ```
 
 Clean up, tar, serve up file
