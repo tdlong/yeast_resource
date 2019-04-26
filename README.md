@@ -185,6 +185,14 @@ qsub haplotype.limSolve.sh
 sh haplotyper.April23.merge.sh
 ```
 
+On our cluster, sometimes jobs fail, so I have to identify failed jobs and re-run them
+You sort of have to run the two commands below until all samples are processed
+
+```bash
+sh haplotype.identify.fails.sh > new.extra
+qsub haplotype.limSolve.cleanup.sh 
+```
+
 Clean up, tar, serve up file
 
 ```bash
