@@ -229,3 +229,7 @@ html ../documentation/hubCentral
 	visibility dense 
 	type vcfTabix
 ```
+The code that calls haplotypes given the table of SNP calls is here
+
+https://github.com/tdlong/yeast_SNP-HAP
+
